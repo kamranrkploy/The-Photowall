@@ -1,0 +1,68 @@
+html{
+    /* background:radial-gradient(rgb(255, 232, 203) -15%,rgb(231, 176, 108) 5%,rgb(255, 232, 203) 550%); */
+
+    background:radial-gradient(rgb(231, 176, 108) -15%,rgb(231, 176, 108) 5%,rgb(255, 140, 0) 225%);
+
+    height: 5%;
+    /* font-size: 25px; */
+}
+
+p{   
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1{
+    font-family: 'billabongregular';
+    text-align: center;
+    font-size: 13rem;
+    font-weight: 120;
+    margin: 2rem 0;
+    letter-spacing: -1px;
+}
+
+@font-face {
+    font-family: 'billabongregular';
+    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot");
+    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff") format('woff'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+.photoGrid{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /**make our figure wrappable our flex items can now can break up in multiple lines /**/
+    
+}
+
+.figure
+{
+    flex-basis: calc(33.333% - 4rem);
+     border: 1px solid white;
+     padding: 2rem;
+     flex-grow: 1;
+     margin: 0 2rem 2rem 2rem;
+}
+
+.photo{
+    width: calc(100% + 4rem);
+    margin: -2rem 0rem 0rem -2rem;
+}
+
+.button-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.remove {
+    background: radial-gradient(rgb(75, 115, 190),rgb(0, 247, 255));
+    flex-basis: 48%;
+    font-size: 15px;
+    border: 2px solid;
+    line-height: 2;
+    padding: 5px;
+}
