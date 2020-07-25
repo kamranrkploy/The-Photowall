@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';               // make sure to add {Component} if you are using class instead of function
 import Photo from './Photo';
 import propTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 function Photowall(props){
 
             return  <div>
-                    <a href="#addPhoto"  onClick ={props.onNavigation} className="Add"> ADD </a>
+                     { /* we remove the onclick EventHandler as now components will take care of the ui */ }
+                    <Link to="/addPhoto" className="Add"> ADD </Link>
                      <div className="photoGrid">
                        {props.posts.map((post , index) => <Photo key={index} post={post} onRemovePhotos={props.onRemovePhotos}/>)}
                     </div>
@@ -19,19 +21,5 @@ Photowall.propTypes = {
             onRemovePhotos : propTypes.func.isRequired //if not a function we ll be thrown a big error
 
                }
-
-
-
-
-        //Using class and then extending it with component class
-
-        // class Photowall extends Component {
-
-        //     render(){
-        //         return <div className="photoGrid">
-        //             {this.props.posts.map((post , index) => <Photo key={index} post={post}/>)}
-        //         </div>
-        //     }
-        // }
 
 export default Photowall

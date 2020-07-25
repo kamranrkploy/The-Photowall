@@ -2,6 +2,7 @@ import React , {Component} from 'react';
 import Title from './Title';
 import Photowall from './Photowall';
 import AddPhoto from './NewPhoto'
+import { Route } from 'react-router-dom';
 
 class Main extends Component {
   constructor(){
@@ -22,12 +23,10 @@ class Main extends Component {
         id: "2",
         description: "On a vacation!",
         imageLink: "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/08/24/104670887-VacationExplainsTHUMBWEB.1910x1000.jpg"
-        }],
-        screen:'photos'
+        }]
        
     }
     this.removePhotos = this.removePhotos.bind(this);
-    this.Nav = this.Nav.bind(this);
 
     
   }
@@ -36,13 +35,6 @@ class Main extends Component {
         this.setState((state) => ({
           posts : state.posts.filter(post => post !== postremoved)
         }))
-      }
-      Nav()  {
-        this.setState({
-          screen:'addPhoto'
-        })
-        
-
       }
 
       componentDidMount() {
@@ -60,25 +52,20 @@ class Main extends Component {
       }
 
   render(){ 
-              return <div>
-                {
-                  this.state.screen === 'photos' && ( 
-                  <div>
-                        <Title h1={'Photowall'}/>
-                        <Photowall posts={this.state.posts} onRemovePhotos={this.removePhotos} onNavigation={this.Nav}/>
-                  </div>
-                  )
-                }
-                {   
-                this.state.screen === 'addPhoto' && (
-                <div>
-                  <AddPhoto />
+              return (
+              <div>
+             <Route exact path = "/" render = {() => (
+                     <div>
+                     <Title h1={'Photowall'}/>
+                     <Photowall posts={this.state.posts} onRemovePhotos={this.removePhotos} onNavigation={this.Nav}/>
+               </div>
+       
+             )}/>
+             <Route path="/addPhoto" component = {AddPhoto}/>
                 </div>
-                )
-               }
-              
-              </div>
-            }
+                  )
+             }
+                  
  }
 
 export default Main
