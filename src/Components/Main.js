@@ -37,6 +37,13 @@ class Main extends Component {
         }))
       }
 
+    addPhoto(postSubmitted){
+      this.setState(state => ({
+          posts : state.posts.concat([postSubmitted])
+      }))
+
+    }
+
       componentDidMount() {
         //we place any asynchronous code or an data that is being fetched from a database here
         //it runs once the render method is called and everything is displayed to us
@@ -53,19 +60,23 @@ class Main extends Component {
 
   render(){ 
               return (
-              <div>
-             <Route exact path = "/" render = {() => (
-                     <div>
-                     <Title h1={'Photowall'}/>
-                     <Photowall posts={this.state.posts} onRemovePhotos={this.removePhotos} onNavigation={this.Nav}/>
-               </div>
-       
-             )}/>
-             <Route path="/addPhoto" component = {AddPhoto}/>
-                </div>
-                  )
-             }
-                  
- }
+                  <div>
+                    <Route exact path = "/" render = {() => (
+                      <div>
+                        <Title h1={'Photowall'}/>
+                        <Photowall posts={this.state.posts} onRemovePhotos={this.removePhotos} onNavigation={this.Nav}/>
+                  </div>
+            )}/>
+
+             <Route path="/addPhoto" render = {({history}) => (
+                   <AddPhoto onAddPhoto={(addedPost) => {
+                       this.addPhoto(addedPost);
+                       history.push('/');
+               }}/>
+            )}/>
+        </div>
+      )
+    }              
+  }
 
 export default Main
