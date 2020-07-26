@@ -12,7 +12,7 @@ class AddPhoto extends Component {
           const imageLink = event.target.elements.link.value;
           const description = event.target.elements.description.value;
           const post = {
-               id:0 ,
+               id:Number(new Date()) ,
                description: description,
                imageLink: imageLink
           }
@@ -37,8 +37,8 @@ class AddPhoto extends Component {
                 return <div>
                   <h1> Photowall </h1>
                        <form className="form" onSubmit={this.SubmitPost}>
-                           <input type="text"  placeholder="Link" name="link"/>
-                           <input type="text"  placeholder="Description" name="description"/>
+                            <input type="text"  placeholder="Link" name="link"/>
+                            <input type="text"  placeholder="Description" name="description"/>
                            <button>Post</button>
                       </form>
                       </div>

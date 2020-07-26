@@ -9,7 +9,11 @@ function Photowall(props){
                      { /* we remove the onclick EventHandler as now components will take care of the ui */ }
                     <Link to="/addPhoto" className="Add"> ADD </Link>
                      <div className="photoGrid">
-                       {props.posts.map((post , index) => <Photo key={index} post={post} onRemovePhotos={props.onRemovePhotos}/>)}
+                       {props.posts
+                       .sort((x , y) => {
+                          return y.id - x.id;
+                       })
+                       .map((post , index) => <Photo key={index} post={post} onRemovePhotos={props.onRemovePhotos}/>)}
                     </div>
                 </div>
                 }
