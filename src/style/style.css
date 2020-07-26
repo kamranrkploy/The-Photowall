@@ -99,3 +99,53 @@ h1{
         padding: 40px;
        transition: all ease .4s;
 }
+
+.form{
+    margin: 0 auto;
+    background:radial-gradient(rgb(112, 30, 30) , rgba(29, 0, 17, 0.932));
+    max-width: 600px;
+    padding: 55px;
+    text-align: center;
+}
+.form input{
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    margin: 11px auto;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.form button{
+    background: radial-gradient(rgb(39, 2, 2) ,black);
+    margin: 25px 0 0;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-color: rgba(29, 0, 17, 0.932);
+    border-radius: 12px;
+    width: 50%;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all ease .5s;
+
+
+}
+
+.form button:hover {
+      /* background: radial-gradient(rgb(221, 0, 0),rgb(39, 2, 2)); */
+      background: radial-gradient(rgb(26, 105, 6),rgb(0, 0, 0));
+      width: 60%;
+      font-size: 20px;
+      transition: all ease .5s;
+      cursor: pointer;
+      letter-spacing: .2em;
+
+}
+
+
+
+
+
