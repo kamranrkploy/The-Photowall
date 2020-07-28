@@ -1,0 +1,4 @@
+##-- here i will be providind the branch for all the different methods that are used along the app to develop it --##
+
+switch to the below branch to get to the portion where everything is being done using Components , states in it and React Routers only
+commit bb18835152806227e6bf389b492be21fd770375e // this is the commit for that portion so switch to it according to your need
