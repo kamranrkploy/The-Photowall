@@ -21,6 +21,7 @@ class Main extends Component {
         id: 2,
         description: "Website overview!",
         imageLink: "https://marketingbitz.com/wp-content/uploads/2018/10/webdesign-3411373_1280.jpg"
+        }]
        
     }
     this.removePhotos = this.removePhotos.bind(this);
