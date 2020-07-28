@@ -2,7 +2,7 @@ import React , {Component} from 'react';
 import Title from './Title';
 import Photowall from './Photowall';
 import AddPhoto from './NewPhoto'
-import { Route } from 'react-router-dom';
+import {HashRouter as Route } from 'react-router-dom';
 
 class Main extends Component {
   constructor(){
