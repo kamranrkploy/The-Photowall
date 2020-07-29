@@ -9,3 +9,10 @@ export function removePost(index){
 }
 
 //Add Post
+
+export function addPost(post){
+    return{
+        type : 'add_post',
+        post : post
+    }
+}

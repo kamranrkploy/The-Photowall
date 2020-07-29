@@ -17,7 +17,8 @@ class AddPhoto extends Component {
                imageLink: imageLink
           }
           if(description && imageLink){
-               this.props.onAddPhoto(post);
+               this.props.addPost(post);
+               this.props.onHistory.push('/');
           }
           else if(!description && !imageLink){
                window.alert("please provide a link and a description");
@@ -35,7 +36,6 @@ class AddPhoto extends Component {
      render(){
        
                 return <div>
-                  <h1> Photowall </h1>
                        <form className="form" onSubmit={this.SubmitPost}>
                             <input type="text"  placeholder="Link" name="link"/>
                             <input type="text"  placeholder="Description" name="description"/>

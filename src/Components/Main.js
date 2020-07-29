@@ -1,8 +1,8 @@
 import React , {Component} from 'react';
 import Title from './Title';
 import Photowall from './Photowall';
-// import AddPhoto from './NewPhoto'
-import {Route} from 'react-router-dom';
+import AddPhoto from './NewPhoto'
+import {Route, Link} from 'react-router-dom';
 import {removePost} from '../Redux/actions';
 
 class Main extends Component {
@@ -15,19 +15,16 @@ class Main extends Component {
     console.log(this.props);
               return (
                   <div>
+                    <h1><Link to="/">Photowall</Link></h1>
                     <Route exact path = "/" render = {() => (
                       <div>
-                        <Title h1={'Photowall'}/>
                         <Photowall {...this.props}/>
                   </div>
             )}/>
-{/* 
+
              <Route path="/addPhoto" render = {({history}) => (
-                   <AddPhoto onAddPhoto={(addedPost) => {
-                       this.addPhoto(addedPost);
-                       history.push('/');
-               }}/>
-            )}/> */}
+                   <AddPhoto {...this.props} onHistory={history}/>
+            )}/>
         </div>
       )
     }              
