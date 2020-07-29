@@ -22,7 +22,6 @@ function Photowall(props){
 
 Photowall.propTypes = {
             posts :  propTypes.array.isRequired ,//make sure that props of type post is in the form of array that is required always
-            onRemovePhotos : propTypes.func.isRequired //if not a function we ll be thrown a big error
 
                }
 

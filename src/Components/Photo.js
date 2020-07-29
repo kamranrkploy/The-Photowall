@@ -23,7 +23,6 @@ function Photo(props){
 //props below should be same as those defined in the photowall.js 
         Photo.prototype = {
                         post: proptypes.object.isRequired  ,
-                        onRemovePhotos : proptypes.func.isRequired
              }
 
 export default Photo
