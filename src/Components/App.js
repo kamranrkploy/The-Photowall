@@ -7,8 +7,8 @@ import {withRouter} from 'react-router';
 function mapStateToProps(state)
     {
         return {
-
-             posts: state
+                 posts: state.Posts ,
+                 comments: state.comments
 
              }
     }

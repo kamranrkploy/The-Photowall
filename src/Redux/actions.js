@@ -1,5 +1,5 @@
+//our props here
 //remove post
-
 export function removePost(index){
     return{
         type : 'remove_Post',
@@ -14,5 +14,14 @@ export function addPost(post){
     return{
         type : 'add_post',
         post : post
+    }
+}
+
+//Add Comment
+
+export function addComment(comment){
+    return{
+        type : 'add_comment' ,
+        comment: comment
     }
 }
