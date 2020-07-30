@@ -1,9 +1,9 @@
 import React , {Component} from 'react';
-import Title from './Title';
 import Photowall from './Photowall';
 import AddPhoto from './NewPhoto'
 import {Route, Link} from 'react-router-dom';
-import {removePost} from '../Redux/actions';
+// import {removePost} from '../Redux/actions';
+import Single from './single';
 
 class Main extends Component {
   constructor(){
@@ -12,7 +12,7 @@ class Main extends Component {
     }
 
   render(){ 
-    console.log(this.props);
+    // console.log(this.props);
               return (
                   <div>
                     <h1><Link to="/">Photowall</Link></h1>
@@ -24,6 +24,10 @@ class Main extends Component {
 
              <Route path="/addPhoto" render = {({history}) => (
                    <AddPhoto {...this.props} onHistory={history}/>
+            )}/>
+
+            <Route path="/post/:id" render = {(params) => (
+                <Single {...this.props} {...params}/>
             )}/>
         </div>
       )
