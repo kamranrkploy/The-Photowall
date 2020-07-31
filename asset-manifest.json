@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/The-Photowall/static/css/main.82a6b97d.chunk.css",
-    "main.js": "/The-Photowall/static/js/main.0aea8c46.chunk.js",
-    "main.js.map": "/The-Photowall/static/js/main.0aea8c46.chunk.js.map",
-    "runtime-main.js": "/The-Photowall/static/js/runtime-main.f3f1c707.js",
-    "runtime-main.js.map": "/The-Photowall/static/js/runtime-main.f3f1c707.js.map",
-    "static/js/2.1636358a.chunk.js": "/The-Photowall/static/js/2.1636358a.chunk.js",
-    "static/js/2.1636358a.chunk.js.map": "/The-Photowall/static/js/2.1636358a.chunk.js.map",
-    "index.html": "/The-Photowall/index.html",
-    "precache-manifest.27ee66dcfc3e38ed2e601a71bdc6075d.js": "/The-Photowall/precache-manifest.27ee66dcfc3e38ed2e601a71bdc6075d.js",
-    "service-worker.js": "/The-Photowall/service-worker.js",
-    "static/css/main.82a6b97d.chunk.css.map": "/The-Photowall/static/css/main.82a6b97d.chunk.css.map",
-    "static/js/2.1636358a.chunk.js.LICENSE.txt": "/The-Photowall/static/js/2.1636358a.chunk.js.LICENSE.txt"
+    "main.css": "/The-Photowall-App/static/css/main.82a6b97d.chunk.css",
+    "main.js": "/The-Photowall-App/static/js/main.0aea8c46.chunk.js",
+    "main.js.map": "/The-Photowall-App/static/js/main.0aea8c46.chunk.js.map",
+    "runtime-main.js": "/The-Photowall-App/static/js/runtime-main.4adb36a1.js",
+    "runtime-main.js.map": "/The-Photowall-App/static/js/runtime-main.4adb36a1.js.map",
+    "static/js/2.1636358a.chunk.js": "/The-Photowall-App/static/js/2.1636358a.chunk.js",
+    "static/js/2.1636358a.chunk.js.map": "/The-Photowall-App/static/js/2.1636358a.chunk.js.map",
+    "index.html": "/The-Photowall-App/index.html",
+    "precache-manifest.dce7ed772458f80b0fe8648d857c28d3.js": "/The-Photowall-App/precache-manifest.dce7ed772458f80b0fe8648d857c28d3.js",
+    "service-worker.js": "/The-Photowall-App/service-worker.js",
+    "static/css/main.82a6b97d.chunk.css.map": "/The-Photowall-App/static/css/main.82a6b97d.chunk.css.map",
+    "static/js/2.1636358a.chunk.js.LICENSE.txt": "/The-Photowall-App/static/js/2.1636358a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f3f1c707.js",
+    "static/js/runtime-main.4adb36a1.js",
     "static/js/2.1636358a.chunk.js",
     "static/css/main.82a6b97d.chunk.css",
     "static/js/main.0aea8c46.chunk.js"
