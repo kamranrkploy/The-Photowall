@@ -60,6 +60,9 @@ h1 a{
      padding: 2rem;
      flex-grow: 1;
      margin: 0 2rem 2rem 2rem;
+     color: bisque;
+     /* transition: all ease .5s; */
+    /* background:radial-gradient(rgba(0, 0, 0, 0.308) , rgba(29, 0, 17, 0.932)); */
 }
 
 .figure .single-photo {
@@ -113,6 +116,46 @@ h1 a{
     padding: 0.5rem 0;
     color: bisque;
 }
+/* .figure:hover{
+    padding: 5%;
+    transition: all ease .5s;
+} */
+
+/* .comment-count {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+} */
+
+/* .speech-bubble {
+    background: url("https://d30y9cdsu7xlg0.cloudfront.net/png/51904-200.png") center no-repeat;
+    background-size: contain;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+    position: relative;
+} */
+
+
+/* button ,.button {
+    border: 2px solid #f2f2f2;
+    background: none;
+    flex-basis: 48%;
+    display: inline-block;
+    line-height: 2;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    transition: all 0.2s;
+    box-sizing: padding-box;
+    
+} */
+
 .comment-form input,
 .comment-form textarea {
     width: 100%;
@@ -222,4 +265,19 @@ h1 a{
       cursor: pointer;
       letter-spacing: .2em;
 
+}
+
+.photoGrid .figure:hover{
+    border-radius: 20px;
+    /* color: black; */
+    font-weight: 600;
+    padding: 6.5%;
+    transition: all ease .5s;
+    background:radial-gradient(rgba(43, 0, 0, 0.623) , rgba(29, 0, 17, 0.932));
+
+}
+
+.photoGrid .figure{
+    transition: all ease .5s;
+    background:radial-gradient(rgba(22, 0, 0, 0.363) , rgba(29, 0, 17, 0.932));
 }

@@ -27,7 +27,7 @@ class Main extends Component {
             )}/>
 
             <Route path="/post/:id" render = {(params) => (
-                <Single {...this.props} {...params}/>
+                <Single {...this.props} {...params} />
             )}/>
         </div>
       )
