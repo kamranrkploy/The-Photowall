@@ -27,6 +27,15 @@ import {database} from '../database/config';
        }
  }
 
+ export function startAddingComments(comment , postId){
+     return (dispatch) => {
+         return database.ref(`comments/ ${postId}`).push(comment).then(() => {
+             dispatch(addComment(comment ,postId));
+         })
+     }
+
+ }
+
 export function removePost(index){
     return{
         type : 'remove_Post',
