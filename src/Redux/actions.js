@@ -19,6 +19,13 @@ import {database} from '../database/config';
      }
  }
 
+ export function  startRemovingPost(index , id){
+       return (dispatch) => {
+           return database.ref(`posts/${id}`).remove().then(() => {
+               dispatch(removePost(index));
+           })
+       }
+ }
 
 export function removePost(index){
     return{
