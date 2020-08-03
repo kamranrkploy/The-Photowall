@@ -1,5 +1,25 @@
-//our props here
-//remove post
+import {database} from '../database/config';
+ export function startAddingPost(post){
+     return (dispatch) => {
+         return database.ref('posts').update({[post.id]: post}).then(() => {
+             dispatch(addPost(post))
+         })
+     }
+ }
+
+ export function startLoadingPost(){
+     return (dispatch) => {
+         return database.ref('posts').once('value').then((snapshot) => {
+             let posts = [];
+             snapshot.forEach((childSnapshot) => {
+                 posts.push(childSnapshot.val());
+             })
+             dispatch(loadPost(posts));
+         })
+     }
+ }
+
+
 export function removePost(index){
     return{
         type : 'remove_Post',
@@ -24,5 +44,12 @@ export function addComment(comment ,postId){
         type : 'add_comment' ,
         comment: comment,
         postId:postId
+    }
+}
+
+export function loadPost(posts){
+    return {
+        type : 'Load_Post',
+        posts
     }
 }
