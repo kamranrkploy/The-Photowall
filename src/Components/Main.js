@@ -6,9 +6,14 @@ import {Route, Link} from 'react-router-dom';
 import Single from './single';
 
 class Main extends Component {
+
+  state = {loading : true }
  
 componentDidMount(){
-  this.props.startLoadingPost()
+  this.props.startLoadingPost().then(() => {
+    this.setState({loading : false})
+  })
+  this.props.startLoadingComments()
 }
 
   render(){ 
@@ -26,8 +31,8 @@ componentDidMount(){
                    <AddPhoto {...this.props} onHistory={history}/>
             )}/>
 
-            <Route path="/post/:id" render = {(params) => (
-                <Single {...this.props} {...params} />
+            <Route exact path="/single/:id" render = {(params) => (
+                <Single loading={this.state.loading} {...this.props} {...params} />
             )}/>
         </div>
       )

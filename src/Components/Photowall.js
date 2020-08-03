@@ -6,13 +6,12 @@ import {Link} from 'react-router-dom';
 function Photowall(props){
 
             return  <div>
-                     { /* we remove the onclick EventHandler as now components will take care of the ui */ }
-                    <Link to="/addPhoto" className="Add"> ADD </Link>
+                    <Link className="Add" to="/addPhoto"> ADD </Link>
                      <div className="photoGrid">
-                       {props.posts
-                       .sort((x , y) => {
-                          return y.id - x.id;
-                       })
+                     {props.posts
+                    .sort(function(x,y){
+                        return  y.id - x.id
+                    })
                        .map((post , index) => <Photo key={index} post={post} {...props} index={index}/>)}
                     </div>
                 </div>

@@ -35,14 +35,14 @@ class AddPhoto extends Component {
 
      render(){
        
-                return <div>
+                return ( <div>
                        <form className="form" onSubmit={this.SubmitPost}>
                             <input type="text"  placeholder="Link" name="link"/>
                             <input type="text"  placeholder="Description" name="description"/>
                            <button>Post</button>
                       </form>
                       </div>
-              } 
+                )} 
     }
 
 export default AddPhoto

@@ -3,7 +3,9 @@ import {database} from '../database/config';
      return (dispatch) => {
          return database.ref('posts').update({[post.id]: post}).then(() => {
              dispatch(addPost(post))
-         })
+         }).catch((error) => {
+            console.log(error)
+        })
      }
  }
 
@@ -15,7 +17,9 @@ import {database} from '../database/config';
                  posts.push(childSnapshot.val());
              })
              dispatch(loadPost(posts));
-         })
+         }).catch((error) => {
+            console.log(error)
+        })
      }
  }
 
@@ -23,7 +27,9 @@ import {database} from '../database/config';
        return (dispatch) => {
            return database.ref(`posts/${id}`).remove().then(() => {
                dispatch(removePost(index));
-           })
+           }).catch((error) => {
+            console.log(error)
+        })
        }
  }
 
@@ -31,10 +37,25 @@ import {database} from '../database/config';
      return (dispatch) => {
          return database.ref(`comments/ ${postId}`).push(comment).then(() => {
              dispatch(addComment(comment ,postId));
-         })
+         }).catch((error) => {
+            console.log(error)
+        })
      }
 
  }
+
+ export function startLoadingComments() {
+    return (dispatch) => {
+        return database.ref('comments').once('value').then((snapshot) => {
+            let comments = {}
+            snapshot.forEach((childSnapshot) => {
+                comments[childSnapshot.key] = Object.values(childSnapshot.val())
+            })
+            dispatch(loadComments(comments))
+        })
+    }
+}
+
 
 export function removePost(index){
     return{
@@ -67,5 +88,12 @@ export function loadPost(posts){
     return {
         type : 'Load_Post',
         posts
+    }
+}
+
+export function loadComments(comments){
+    return {
+        type : 'load_comment',
+        comments
     }
 }
