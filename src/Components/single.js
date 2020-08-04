@@ -16,7 +16,7 @@ class Single extends Component{
         }else if(post){
         return <div className="single-photo">
             <Photo post={post} {...this.props} index={index}/>
-            <Comments startAddingComments ={this.props.startAddingComments } comments={comments} id={id}/> 
+            <Comments startAddingComment ={this.props.startAddingComment} comments={comments} id={id}/> 
           </div>
         }else{
             return <h1>No Post Found...</h1>

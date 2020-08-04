@@ -13,6 +13,7 @@ componentDidMount(){
   this.props.startLoadingPost().then(() => {
     this.setState({loading : false})
   })
+  
   this.props.startLoadingComments()
 }
 

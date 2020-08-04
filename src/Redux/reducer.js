@@ -9,11 +9,11 @@ function comments(state={} , action){
         }else{
             return {...state, [action.postId]:[...state[action.postId] , action.comment]}
         }
-        case 'load_comment' : return action.comments
+        case 'LOAD_COMMENTS' : return action.comments
         
         default: return state
     }
-    
+    // return state
 }
 
 function Posts(state=posts , action){
@@ -26,6 +26,6 @@ function Posts(state=posts , action){
     }
 }
 
-const rootReducer = combineReducers({comments , Posts});
+const rootReducer = combineReducers({Posts , comments});
 
 export default rootReducer
