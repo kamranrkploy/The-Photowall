@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7a95c21af8228dfa957279d56698e98",
+    "revision": "87ebd3b5d6ba80b5e1573a78d625bc5a",
     "url": "/The-Photowall-App/index.html"
   },
   {
-    "revision": "dc8d361de925c425a8f4",
+    "revision": "2c34aa0b8c1ca0a2ea85",
     "url": "/The-Photowall-App/static/css/main.e1cab19c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/The-Photowall-App/static/js/2.972d197d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dc8d361de925c425a8f4",
-    "url": "/The-Photowall-App/static/js/main.b44c9575.chunk.js"
+    "revision": "2c34aa0b8c1ca0a2ea85",
+    "url": "/The-Photowall-App/static/js/main.596a1780.chunk.js"
   },
   {
     "revision": "cd69f4387cbb19f605e3",
