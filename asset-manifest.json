@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/The-Photowall-App/static/css/main.e1cab19c.chunk.css",
-    "main.js": "/The-Photowall-App/static/js/main.596a1780.chunk.js",
-    "main.js.map": "/The-Photowall-App/static/js/main.596a1780.chunk.js.map",
+    "main.css": "/The-Photowall-App/static/css/main.2e6d0249.chunk.css",
+    "main.js": "/The-Photowall-App/static/js/main.2781a393.chunk.js",
+    "main.js.map": "/The-Photowall-App/static/js/main.2781a393.chunk.js.map",
     "runtime-main.js": "/The-Photowall-App/static/js/runtime-main.4adb36a1.js",
     "runtime-main.js.map": "/The-Photowall-App/static/js/runtime-main.4adb36a1.js.map",
     "static/js/2.972d197d.chunk.js": "/The-Photowall-App/static/js/2.972d197d.chunk.js",
     "static/js/2.972d197d.chunk.js.map": "/The-Photowall-App/static/js/2.972d197d.chunk.js.map",
     "index.html": "/The-Photowall-App/index.html",
-    "precache-manifest.514d2962d508fb16e13dcfa4083965a1.js": "/The-Photowall-App/precache-manifest.514d2962d508fb16e13dcfa4083965a1.js",
+    "precache-manifest.b93106456dd5f18c70d71aa925586e88.js": "/The-Photowall-App/precache-manifest.b93106456dd5f18c70d71aa925586e88.js",
     "service-worker.js": "/The-Photowall-App/service-worker.js",
-    "static/css/main.e1cab19c.chunk.css.map": "/The-Photowall-App/static/css/main.e1cab19c.chunk.css.map",
+    "static/css/main.2e6d0249.chunk.css.map": "/The-Photowall-App/static/css/main.2e6d0249.chunk.css.map",
     "static/js/2.972d197d.chunk.js.LICENSE.txt": "/The-Photowall-App/static/js/2.972d197d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4adb36a1.js",
     "static/js/2.972d197d.chunk.js",
-    "static/css/main.e1cab19c.chunk.css",
-    "static/js/main.596a1780.chunk.js"
+    "static/css/main.2e6d0249.chunk.css",
+    "static/js/main.2781a393.chunk.js"
   ]
 }
