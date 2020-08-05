@@ -19,7 +19,7 @@ class Comments extends Component{
 
     render(){
         // console.log(this.props.comments);
-        return <div className="comment">
+        return <div className="comment" id="scroll">
             {
             
                 this.props.comments.map((comment , index) => {
